@@ -1,0 +1,25 @@
+.gallery-container {
+    background: #000;
+}
+
+.gallery{
+    margin: 10px;
+}
+
+.lg-react-element {
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.image {
+    max-width: 100%;
+    display: block;
+    padding: 5px 0px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.image:hover {
+    filter: opacity(.9);
+    transform: scale(1.01);
+}

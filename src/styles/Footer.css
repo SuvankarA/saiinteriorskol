@@ -1,0 +1,174 @@
+.footer {
+  background-color: #E04C4C;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  padding: 3rem 1rem 2rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1 1 280px;
+  min-width: 260px;
+}
+
+.footer-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.footer-column p {
+  font-size: 17px;
+  margin-bottom: 1rem;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.footer-phone a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-contact-line a,
+.footer-contact-line span {
+  font-size: 17px;
+  color: white;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer-socials a {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+  border-top: 1px solid #ffffff3b;
+  padding-top: 1rem;
+}
+
+/* ------------ RESPONSIVE STYLES ------------ */
+
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0rem;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-phone,
+  .footer-contact-line {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-phone a {
+    font-size: 1.5rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  .footer-column p {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-contact-line a,
+  .footer-contact-line span {
+    font-size: 13px;
+  }
+  .footer-socials {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    gap: 0;
+  }
+
+  .footer-column {
+    margin-bottom: -5rem;
+  }
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-phone a {
+    font-size: 1.3rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1rem;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}

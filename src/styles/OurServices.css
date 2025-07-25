@@ -1,0 +1,69 @@
+.image-stack-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  position: relative;
+}
+
+.image-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.8s ease, z-index 0.3s ease;
+}
+
+/* Default positions for large screens */
+.left-position {
+  transform: translateX(-50%) rotateY(15deg) scale(0.9);
+  z-index: 1;
+}
+
+.right-position {
+  transform: translateX(50%) rotateY(-15deg) scale(0.9);
+  z-index: 1;
+}
+
+.center-position {
+  transform: translateX(0) rotateY(0deg) scale(1.1);
+  z-index: 3;
+}
+
+/* Responsive Tweaks for Tablets */
+@media (max-width: 1024px) {
+  .left-position {
+    transform: translateX(-40%) rotateY(10deg) scale(0.95);
+  }
+
+  .right-position {
+    transform: translateX(40%) rotateY(-10deg) scale(0.95);
+  }
+
+  .center-position {
+    transform: translateX(0) rotateY(0deg) scale(1.05);
+  }
+}
+
+/* Responsive Tweaks for Mobile */
+@media (max-width: 640px) {
+  .image-stack-container {
+    max-width: 240px;
+    aspect-ratio: 3 / 4;
+  }
+
+  .left-position {
+    transform: translateX(-30%) rotateY(8deg) scale(0.95);
+  }
+
+  .right-position {
+    transform: translateX(30%) rotateY(-8deg) scale(0.95);
+  }
+
+  .center-position {
+    transform: translateX(0) rotateY(0deg) scale(1);
+  }
+}

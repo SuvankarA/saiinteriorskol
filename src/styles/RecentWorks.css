@@ -1,0 +1,179 @@
+.recent-works-section {
+  padding: 2rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.header .label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.header .bar {
+  width: 15px;
+  height: 40px;
+  background: black;
+}
+
+.header .tag {
+  background: #e64a39;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  margin-left: -4px;
+  font-size: 1rem;
+}
+
+.header .title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
+.navigation button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #e64a39;
+  /* padding: 0.5rem; */
+  transition: background 0.2s ease;
+}
+
+.navigation button:hover {
+  background: #f3f3f3;
+  border-radius: 50%;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  scroll-behavior: smooth;
+}
+
+.carousel.animated-scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+  animation-play-state: running;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  background: #D9D9D9;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 300px;
+  height: 250px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card p {
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.carousel-wrapper:hover .carousel.animated-scroll {
+  animation-play-state: paused;
+}
+
+/* -------------------------------
+   Responsive Design
+-------------------------------- */
+
+@media (max-width: 1024px) {
+  .header .title {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .navigation button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .navigation {
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+  }
+
+  .carousel-wrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .navigation button {
+    font-size: 1.75rem;
+  }
+}
+/* Desktop-specific width tweak */
+@media (min-width: 1024px) {
+  .carousel-wrapper {
+    width: 75%;
+  }
+  .navigation {
+    width: 75%; /* Match carousel-wrapper width on desktop */
+  }
+}

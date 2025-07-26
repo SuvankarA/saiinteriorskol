@@ -14,15 +14,15 @@ import img9 from "../assets/sam9.jpg";
 
 
 const images = [
-  { src: img1, caption: "Banquet" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_50/sam1_v7ft2y.jpg", caption: "Banquet" },
   // { src: img2, caption: "Commercial Project" },
-  { src: img3, caption: "Residential Project" },
-  { src: img4, caption: "Residential Project" },
-  { src: img5, caption: "Rooftop Lounge" },
-  { src: img6, caption: "Rooftop Lounge" },
-  { src: img7, caption: "Lounge" },
-  { src: img8, caption: "Rooftop Lounge" },
-  { src: img9, caption: "Architecture of Jagannath Temple" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_50/sam3_xrnjbl.jpg", caption: "Residential Project" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_50/sam4_uf0lmv.jpg", caption: "Residential Project" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_10/sam5_bvfvr3.jpg", caption: "Rooftop Lounge" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_10/sam6new_geoqty.jpg", caption: "Rooftop Lounge" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_1/sam7new_blikqg.jpg", caption: "Lounge" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_1/sam8_py0hit.jpg", caption: "Rooftop Lounge" },
+  { src: "https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_10/sam9_vflgff.jpg", caption: "Architecture of Jagannath Temple" },
 ];
 
 const RecentWorks = () => {

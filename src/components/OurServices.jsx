@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import centerImage from "../assets/middle.png";
-import leftImage from "../assets/image4.jpg";
-import rightImage from "../assets/image5.jpg";
-import img4 from "../assets/image4.jpg";
-import img5 from "../assets/image5.jpg";
+// import centerImage from "../assets/middle.png";
+// import leftImage from "../assets/image4.jpg";
+// import rightImage from "../assets/image5.jpg";
 import "../styles/OurServices.css"; // Adjust the path as necessary
-import { i } from "framer-motion/client";
+
+
 
 const OurServices = () => {
   const [activeIndex, setActiveIndex] = useState(1); // 0 = left, 1 = center, 2 = right
@@ -19,6 +18,9 @@ const OurServices = () => {
 
     return () => clearInterval(interval); // cleanup
   }, []);
+  const centerImage ="https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_50/middle_isk3ka.png"
+  const leftImage ="https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_10/image4_gchfix.jpg"
+  const rightImage="https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_10/image5_zqf5yu.jpg"
 
   const images = [leftImage, centerImage, rightImage];
 

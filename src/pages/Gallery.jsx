@@ -12,7 +12,7 @@ const Gallery = () => {
         <title>Gallery | Sai Interiors</title>
       </Helmet>
       <Navbar
-        backgroundImage={galleryImage}
+        backgroundImage="https://res.cloudinary.com/suvankar-adhikary/image/upload/f_auto,q_50/galleryImage_vxehvo.jpg"
         heroText={
           <div className="absolute top-1/2 left-6 xl:left-35 transform -translate-y-1/2 z-10">
             <span className="inline-block bg-white text-black text-xl md:text-xl font-bold px-3 py-1 shadow mb-4">

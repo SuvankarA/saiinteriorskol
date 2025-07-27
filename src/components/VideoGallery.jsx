@@ -10,8 +10,8 @@ const VideoGallery = () => {
         className="flex justify-center items-center mb-10"
         data-aos="fade-up"
       >
-        <div className="bg-black w-[10px] h-[36px]"></div>
-        <h2 className="bg-[#e64a39] text-white font-bold text-lg px-5 py-1 ">
+        <div className="bg-black w-[10px] h-[32px] sm:h-[36px]"></div>
+        <h2 className="bg-[#e64a39] text-white font-bold sm:text-lg px-5 py-1 ">
           Chic Heights: Discover our Signature
         </h2>
       </div>

@@ -39,11 +39,18 @@ const Footer = () => {
             <div className="footer-contact-line">
               <MapPin size={19} />
               <span>
-                47, Bansdroni Govt. Colony,
-                <br />
-                Kolkata 700070, West Bengal,
-                <br />
-                India.
+                <a
+                  href="https://short-link.me/14J-d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  
+                >
+                  47, Bansdroni Govt. Colony,
+                  <br />
+                  Kolkata 700070, West Bengal,
+                  <br />
+                  India.
+                </a>
               </span>
             </div>
             <div className="footer-contact-line">

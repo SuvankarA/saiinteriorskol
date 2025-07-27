@@ -1,6 +1,10 @@
-import video1 from "/soumendaVideo5.mp4";
-import video2 from "/soumendaVideo2.mp4";
-import video3 from "/soumendaVideo4.mp4";
+// import video1 from "/soumendaVideo5.mp4";
+// import video2 from "/soumendaVideo2.mp4";
+// import video3 from "/soumendaVideo4.mp4";
+
+const video1 = "https://res.cloudinary.com/suvankar-adhikary/video/upload/f_auto,q_50/soumendaVideo5_lcx2um.mp4"
+const video2 = "https://res.cloudinary.com/suvankar-adhikary/video/upload/f_auto,q_50/soumendaVideo2_hinaih.mp4"
+const video3 = "https://res.cloudinary.com/suvankar-adhikary/video/upload/f_auto,q_50/soumendaVideo4_caqyhw.mp4"
 
 const VideoGallery = () => {
   return (

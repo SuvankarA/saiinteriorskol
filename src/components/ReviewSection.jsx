@@ -1,6 +1,8 @@
 import leftQuote from "../assets/left-quote.png";
 import rightQuote from "../assets/right-quote.png";
-import review from "../assets/reviewVideo.mp4";
+// import review from "../assets/reviewVideo.mp4";
+
+const review = "https://res.cloudinary.com/suvankar-adhikary/video/upload/f_auto,q_50/reviewVideo_kdq1oy.mp4"
 
 const ReviewSection = () => {
   return (
